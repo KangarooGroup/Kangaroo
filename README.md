@@ -15,7 +15,7 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 
 ## Model
 <p align="center">
-    <img src="demo/model.png" width="50%" style="margin-top: 40px;">
+    <img src="demo/model.png" width="80%">
 </p>
 
 ## Quick Start
@@ -27,54 +27,22 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 - transformers == 4.41.0
 - xformers == 0.0.23
 
-### Simple use with 🤗 Transformers
-```python
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
-
-tokenizer = AutoTokenizer.from_pretrained("KangarooGroup/kangaroo")
-model = AutoModelForCausalLM.from_pretrained(
-    "KangarooGroup/kangaroo",
-    torch_dtype=torch.bfloat16,
-    trust_remote_code=True,
-)
-model = model.to("cuda")
-terminators = [tokenizer.eos_token_id, tokenizer.convert_tokens_to_ids("<|eot_id|>")]
-
-video_path = "path/to/video"
-query = "Please describe this video"
-out, history = model.chat(video_path=video_path,
-                          query=query,
-                          tokenizer=tokenizer,
-                          max_new_tokens=512,
-                          eos_token_id=terminators,
-                          do_sample=True,
-                          temperature=0.6,
-                          top_p=0.9,)
-print(out) 
-
-query = "What happend at the end of the video?"
-out, history = model.chat(video_path=video_path,
-                          query=query,
-                          history=history,
-                          tokenizer=tokenizer,
-                          max_new_tokens=512,
-                          eos_token_id=terminators,
-                          do_sample=True,
-                          temperature=0.6,
-                          top_p=0.9,)
-print(out)
-```
+### Multi-round Chat with 🤗 Transformers
+See [chat.ipynb](https://github.com/KangarooGroup/Kangaroo/blob/main/chat.ipynb)
 
 ## Results
+
+### Results on Comprehensive Video Understanding Benchmarks
 <p align="center">
-    <img src="demo/bench.png" width="50%" style="margin-top: 40px;">
+    <img src="demo/bench.png" width="90%" style="margin: 40;">
+</p>
+
+### Qualitative Examples
+<p align="center">
+    <img src="demo/demo1.png" width="90%" style="margin-top:100px;">
 </p>
 <p align="center">
-    <img src="demo/demo1.png" width="50%" style="margin-top: 40px;">
-</p>
-<p align="center">
-    <img src="demo/demo2.png" width="50%" style="margin-top: 40px;">
+    <img src="demo/demo2.png" width="90%" >
 </p>
 
 ## Citation
