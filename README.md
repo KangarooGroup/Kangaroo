@@ -15,7 +15,7 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 
 ## Model
 <p align="center">
-    <img src="demo/model.png" width="80%">
+    <img src="assets/model.png" width="80%">
 </p>
 
 ## Quick Start
@@ -34,15 +34,15 @@ See [chat.ipynb](https://github.com/KangarooGroup/Kangaroo/blob/main/chat.ipynb)
 
 ### Results on Comprehensive Video Understanding Benchmarks
 <p align="center">
-    <img src="demo/bench.png" width="90%" style="margin: 40;">
+    <img src="assets/bench.png" width="90%" style="margin: 40;">
 </p>
 
 ### Qualitative Examples
 <p align="center">
-    <img src="demo/demo1.png" width="90%" style="margin-top:100px;">
+    <img src="assets/demo1.png" width="90%" style="margin-top:100px;">
 </p>
 <p align="center">
-    <img src="demo/demo2.png" width="90%" >
+    <img src="assets/demo2.png" width="90%" >
 </p>
 
 ## Citation
