@@ -1,10 +1,48 @@
 # Kangaroo: A Powerful Video-Language Model Supporting Long-context Video Input
 
-## Release
+# Release
 - [2024/07/17] 🔥 **Kangaroo** has been released. We release [blog](https://kangaroogroup.github.io/Kangaroo.github.io/) and [model](https://huggingface.co/KangarooGroup/kangaroo). Please check out the blog for details.
 
+# Get Started with the Model
+```python
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
-## Citation
+tokenizer = AutoTokenizer.from_pretrained("/path/to/kangaroo")
+model = AutoModelForCausalLM.from_pretrained(
+    "/path/to/kangaroo",
+    torch_dtype=torch.bfloat16,
+    trust_remote_code=True,
+)
+model = model.to("cuda")
+terminators = [tokenizer.eos_token_id, tokenizer.convert_tokens_to_ids("<|eot_id|>")]
+
+video_path = "path/to/video"
+query = "Please describe this video"
+out, history = model.chat(video_path=video_path,
+                          query=query,
+                          tokenizer=tokenizer,
+                          max_new_tokens=512,
+                          eos_token_id=terminators,
+                          do_sample=True,
+                          temperature=0.6,
+                          top_p=0.9,)
+print(out) 
+
+query = "What happend at the end of the video?"
+out, history = model.chat(video_path=video_path,
+                          query=query,
+                          history=history,
+                          tokenizer=tokenizer,
+                          max_new_tokens=512,
+                          eos_token_id=terminators,
+                          do_sample=True,
+                          temperature=0.6,
+                          top_p=0.9,)
+print(out)
+```
+
+# Citation
 
 If you find it useful for your research , please cite related papers/blogs using this BibTeX:
 ```bibtex
