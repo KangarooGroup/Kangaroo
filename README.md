@@ -3,15 +3,16 @@
 ## Release
 - [2024/07/17] 🔥 **Kangaroo** has been released. We release [blog](https://kangaroogroup.github.io/Kangaroo.github.io/) and [model](https://huggingface.co/KangarooGroup/kangaroo). Please check out the blog for details.
 
-## Requirements
-- python 3.9
-- pytorch 2.1.0 
-- CUDA 12.1 (for GPU)
-- transformers 4.41.0
-- xformers 0.0.23
-
 ## Quick Start
-We provide a demo for the simple usage of Kangaroo with 🤗 Transformers
+
+### Requirements
+- python == 3.9
+- torch == 2.1.0, torchvision == 0.16.0
+- CUDA == 12.1 (for GPU)
+- transformers == 4.41.0
+- xformers == 0.0.23
+
+### Simple use with 🤗 Transformers
 ```python
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
