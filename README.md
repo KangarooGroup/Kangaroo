@@ -1,16 +1,24 @@
 # Kangaroo: A Powerful Video-Language Model Supporting Long-context Video Input
 
-# Release
+## Release
 - [2024/07/17] 🔥 **Kangaroo** has been released. We release [blog](https://kangaroogroup.github.io/Kangaroo.github.io/) and [model](https://huggingface.co/KangarooGroup/kangaroo). Please check out the blog for details.
 
-# Get Started with the Model
+## Requirements
+- python 3.9
+- pytorch 2.1.0 
+- CUDA 12.1 (for GPU)
+- transformers 4.41.0
+- xformers 0.0.23
+
+## Quick Start
+We provide a demo for the simple usage of Kangaroo with 🤗 Transformers
 ```python
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-tokenizer = AutoTokenizer.from_pretrained("/path/to/kangaroo")
+tokenizer = AutoTokenizer.from_pretrained("KangarooGroup/kangaroo")
 model = AutoModelForCausalLM.from_pretrained(
-    "/path/to/kangaroo",
+    "KangarooGroup/kangaroo",
     torch_dtype=torch.bfloat16,
     trust_remote_code=True,
 )
@@ -42,7 +50,7 @@ out, history = model.chat(video_path=video_path,
 print(out)
 ```
 
-# Citation
+## Citation
 
 If you find it useful for your research , please cite related papers/blogs using this BibTeX:
 ```bibtex
