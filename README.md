@@ -28,7 +28,10 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 - xformers == 0.0.23
 
 ### Download Model
-Our Kangaroo model checkpoint is available at [huggingface](https://huggingface.co/KangarooGroup/kangaroo)
+Our Kangaroo model checkpoint is available at [huggingface](https://huggingface.co/KangarooGroup/kangaroo).
+```bash
+huggingface-cli download  --resume-download KangarooGroup/kangaroo --local-dir kangaroo_model
+```
 
 ### Multi-round Chat with 🤗 Transformers
 See [chat.ipynb](https://github.com/KangarooGroup/Kangaroo/blob/main/chat.ipynb)
