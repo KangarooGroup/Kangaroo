@@ -27,6 +27,9 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 - transformers == 4.41.0
 - xformers == 0.0.23
 
+### Download Model
+Our Kangaroo model checkpoint is available at [huggingface](https://huggingface.co/KangarooGroup/kangaroo)
+
 ### Multi-round Chat with 🤗 Transformers
 See [chat.ipynb](https://github.com/KangarooGroup/Kangaroo/blob/main/chat.ipynb)
 
