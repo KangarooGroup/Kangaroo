@@ -20,10 +20,19 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 
 ## Quick Start
 
-### Requirements
+### Installation
+```bash
+conda create -n kangaroo python=3.9 -y
+conda activate llava
+pip install -r requirements
+```
+
+#### Make Sure the following are installed
 - python == 3.9
-- torch == 2.1.0, torchvision == 0.16.0
-- CUDA == 12.1 (for GPU)
+- torch == 2.1.1, torchvision == 0.16.1
+- CUDA == 12.1
+- timm == 0.9.16
+- flash-attn == 2.6.1
 - transformers == 4.41.0
 - xformers == 0.0.23
 
