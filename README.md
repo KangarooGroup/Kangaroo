@@ -20,13 +20,6 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 
 ## Quick Start
 
-
-### Download Model from 🤗 huggingface
-Our Kangaroo model checkpoint is available at [huggingface](https://huggingface.co/KangarooGroup/kangaroo).
-```bash
-huggingface-cli download  --resume-download KangarooGroup/kangaroo --local-dir kangaroo_model
-```
-
 ### Installation
 1. Prepare environment
 ```bash
