@@ -20,27 +20,25 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 
 ## Quick Start
 
+
+### Download Model from 🤗 huggingface
+Our Kangaroo model checkpoint is available at [huggingface](https://huggingface.co/KangarooGroup/kangaroo).
+```bash
+huggingface-cli download  --resume-download KangarooGroup/kangaroo --local-dir kangaroo_model
+```
+
 ### Installation
+1. Prepare environment
 ```bash
 conda create -n kangaroo python=3.9 -y
 conda activate llava
 pip install -r requirements
 ```
-
-#### Make Sure the following are installed
-- python == 3.9
-- torch == 2.1.1, torchvision == 0.16.1
-- CUDA == 12.1
-- timm == 0.9.16
-- flash-attn == 2.6.1
-- transformers == 4.41.0
-- xformers == 0.0.23
-
-### Download Model
-Our Kangaroo model checkpoint is available at [huggingface](https://huggingface.co/KangarooGroup/kangaroo).
+2. Install flash-attn
 ```bash
-huggingface-cli download  --resume-download KangarooGroup/kangaroo --local-dir kangaroo_model
+pip install flash-attn --no-build-isolation
 ```
+3. Install nvidia apex according to [apex](https://github.com/NVIDIA/apex)
 
 ### Multi-round Chat with 🤗 Transformers
 See [chat.ipynb](https://github.com/KangarooGroup/Kangaroo/blob/main/chat.ipynb)
