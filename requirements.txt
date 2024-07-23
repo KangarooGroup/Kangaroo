@@ -9,3 +9,4 @@ xformers==0.0.23
 torch==2.1.1
 torchvision==0.16.1
 transformers==4.41.0
+streamlit==1.36.0

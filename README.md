@@ -37,6 +37,11 @@ pip install flash-attn --no-build-isolation
 ### Multi-round Chat with 🤗 Transformers
 See [chat.ipynb](https://github.com/KangarooGroup/Kangaroo/blob/main/chat.ipynb)
 
+### Streamlit Deploy
+We provide code for users to build a web UI demo. Please use ```streamlit==1.36.0```.
+```
+streamlit run streamlit_app.py --server.port PORT
+```
 ## Results
 
 ### Results on Comprehensive Video Understanding Benchmarks
