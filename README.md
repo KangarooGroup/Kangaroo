@@ -1,6 +1,7 @@
 # Kangaroo: A Powerful Video-Language Model Supporting Long-context Video Input
 
 ## Release
+- [2024/07/23] 🔥 We submit evalution results of Video-MME benchmark on the online [leaderboard](https://video-mme.github.io/home_page.html#leaderboard). Our **Kangaroo** model outperforms other 7B/8B models, and surpasses some models with over 10B parameters.
 - [2024/07/17] 🔥 **Kangaroo** has been released. We release [blog](https://kangaroogroup.github.io/Kangaroo.github.io/) and [model](https://huggingface.co/KangarooGroup/kangaroo). Please check out the blog for details.
 
 ## Abstract
