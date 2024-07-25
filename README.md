@@ -25,7 +25,7 @@ We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Mod
 1. Prepare environment
 ```bash
 conda create -n kangaroo python=3.9 -y
-conda activate llava
+conda activate kangaroo
 pip install -r requirements
 ```
 2. Install flash-attn
