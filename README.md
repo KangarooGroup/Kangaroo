@@ -8,10 +8,10 @@
 ## Abstract
 We introduce <strong>Kangaroo</strong>, a powerful Multimodal Large Language Model designed for long-context video understanding. Our presented Kangaroo model shows remarkable performance across diverse video understanding tasks including video caption, QA and conversation. Generally, our key contributions in this work can be summarized as follows:
 <ol>
-    <li><strong>Long-context Video Input.</strong> To enhance the model's capability to comprehend longer videos, we extend the maximum frames of input videos to 160. To this end, we aggregate multiple videos with variable frame counts and aspect ratios into one sample. We further design a spatial-temporal pathify module to improve training efficiency.</li>
+    <li><strong>Long-context Video Input.</strong> To enhance the model's capability to comprehend longer videos, we extend the maximum frames of input videos to 160. To this end, we aggregate multiple videos with variable frame counts and aspect ratios into one sample. We further design a spatial-temporal patchify module to improve training efficiency.</li>
     <li><strong>Strong Performance.</strong> We evaluate our model across various video understanding benchmarks. The results indicate that our model achieves state-of-the-art performance on the majority of comprehensive benchmarks and maintain a competitive level in others. Notably, our model outperforms most larger open-source models with over 30B parameters and some proprietary models on certain benchmarks.</li>
-    <li><strong>Video Annotation System.</strong> We develop a data curation and automatic annotation system to generate captions for open-source and internal videos. The generated large-scale dataset are utilized for video-text pre-training. For video instruction tuning stage, we construct a video instruciton tuning dataset based on public and internal datasets covering a variety of tasks.</li>
-    <li><strong>Billingual Conversation.</strong> Our proposed model is equipped with the capability of Chinese, English and billingual conversations, and support single/multi-round conversation paradigms.
+    <li><strong>Video Annotation System.</strong> We develop a data curation and automatic annotation system to generate captions for open-source and internal videos. The generated large-scale dataset are utilized for video-text pre-training. For video instruction tuning stage, we construct a video instruction tuning dataset based on public and internal datasets covering a variety of tasks.</li>
+    <li><strong>Bilingual Conversation.</strong> Our proposed model is equipped with the capability of Chinese, English and bilingual conversations, and support single/multi-round conversation paradigms.
     </li>
 </ol>
 
