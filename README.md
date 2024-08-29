@@ -58,7 +58,7 @@ streamlit run streamlit_app.py --server.port PORT
 
 #### Results on SeedBench-Video
 <p align="center">
-    <img src="assets/seed.png" width="80%" style="margin: 40;">
+    <img src="assets/seed.png" width="65%" style="margin: 40;">
 </p>
 
 ### Qualitative Examples
@@ -66,10 +66,10 @@ streamlit run streamlit_app.py --server.port PORT
     <img src="assets/demo1.png" width="80%" style="margin-top:100px;">
 </p>
 <p align="center">
-    <img src="assets/demo2.png" width="70%" >
+    <img src="assets/demo2.png" width="80%" >
 </p>
 <p align="center">
-    <img src="assets/demo3.png" width="70%" >
+    <img src="assets/demo3.png" width="80%" >
 </p>
 
 ## Citation
