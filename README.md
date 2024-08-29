@@ -80,6 +80,6 @@ If you find it useful for your research , please cite related papers/blogs using
 @article{kangaroogroup,
 	title={Kangaroo: A Powerful Video-Language Model Supporting Long-context Video Input},
 	author={Liu, Jiajun and Wang, Yibing and Ma, Hanghang and Wu, Xiaoping and Ma, Xiaoqi and Wei, xiaoming and Jiao, Jianbin and Wu, Enhua and Hu, Jie},
-    journal={arXiv preprint arXiv:2408.15542},
+	journal={arXiv preprint arXiv:2408.15542},
 	year={2024}
 }
