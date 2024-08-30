@@ -1,7 +1,7 @@
 # Kangaroo: A Powerful Video-Language Model Supporting Long-context Video Input
 
 ## Release
-- [2024/08/29] 🔥 We release our [paper](https://arxiv.org/pdf/2408.15542) on Arkiv. Check out the paper for more details.
+- [2024/08/29] 🔥 We release our [paper](https://arxiv.org/pdf/2408.15542) on Arxiv. Check out the paper for more details.
 - [2024/08/5] 🔥 We submit evalution results of LongVideoBench(test split). Kangaroo achieves better results than existing open-source methods.
 - [2024/07/24] 🔥 We submit evalution results of VideoVista benchmark on the online [leaderboard](https://videovista.github.io/#leaderboard). Kangaroo achieves SOTA performance among open-source models.
 - [2024/07/23] 🔥 We submit evalution results of Video-MME benchmark on the online [leaderboard](https://video-mme.github.io/home_page.html#leaderboard). Our Kangaroo outperforms other 7B/8B models, and surpasses most models with over 10B parameters.
